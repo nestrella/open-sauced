@@ -2,12 +2,16 @@ name: Development
 
 on:
   pull_request:
+    paths-ignore:
+      - '**/*.md'
     types:
       - opened
       - edited
       - synchronize
       - reopened
   push:
+    paths-ignore:
+      - '**/*.md'
   workflow_call:
 
 jobs:
