@@ -35,3 +35,19 @@ jobs:
             npm install -D jest-environment-jsdom
       - name: "Run test"
         run: npm test
+
+  lint: 
+    name: Code standards
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: "Chech out Repository"
+        uses: actions/checkout@v4
+
+      - name: "Setup Mode"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16
+
+      - name: "lint code"
+        run: npm run lint --if-present
