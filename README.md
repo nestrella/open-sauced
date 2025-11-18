@@ -7,6 +7,7 @@ _This repo is archived. If you are looking for the latest, check out [open-sauce
   <strong>The path to your next Open Source contribution</strong>
 </div>
 <br>
+
 <p align="center">
   <a href="https://github.com/open-sauced/open-sauced/actions/workflows/codeql-analysis.yml">
     <img src="https://github.com/open-sauced/open-sauced/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL" style="max-width: 100%;">
