@@ -50,5 +50,8 @@ jobs:
           node-version: 16
           cache: 'npm'
           
-      - name: "lint code"
+      - name: "Install dependencies with legacy peer deps"
+        run: npm ci --legacy-peer-deps
+        
+      - name: "Lint code"
         run: npm run lint --if-present
